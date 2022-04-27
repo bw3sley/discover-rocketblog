@@ -14,13 +14,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <nav>
                 <img src="./assets/logo.svg" alt="">
 
                 <ul>
-                    <li>Home</li>
+                    <div class="li-active">
+                        <div class="slider"></div>
+                        <li class="active">Home</li>
+                    </div>
                     <li>Sobre</li>
                     <li>Categorias</li>
                     <li>Contato</li>
@@ -33,7 +36,7 @@
                 </div>
             </nav>
 
-            <section id="hero" class="hero">
+            <section class="hero">
                 <div class="left-hero">
                     <h1>Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
@@ -45,32 +48,30 @@
                     <img src="./assets/featured-image.png" alt="">
                 </div>
             </section>
-        </header>
+        </div>
+    </header>
 
-        <div class="divider"></div>
-        
-        <main>
+    <div class="divider"></div>
+    
+    <main>
+        <div class="container">
             <div class="top-content">
-                <div class="left-content">
+                <div class="left-post">
                     <div class="big-post">
                         <img src="./assets/post-1.png" alt="">
                         <p class="figcaption">Janeiro 04, 2022</p>
     
-                        <div class="post-content">
-                            <h2>Começando no ReactJS em 2022</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
-                        </div>
+                        <h2>Começando no ReactJS em 2022</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
                     </div>
                 </div>
     
-                <div class="right-content">
+                <div class="right-post">
                     <div class="small-post">
                         <p class="figcaption">Janeiro 04, 2022</p>
 
-                        <div class="post-content">
-                            <h2>Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
-                        </div>
+                        <h2>Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
                     </div>
 
                     <div class="thin-divider"></div>
@@ -78,10 +79,8 @@
                     <div class="small-post">
                         <p class="figcaption">Janeiro 04, 2022</p>
 
-                        <div class="post-content">
-                            <h2>Veja a evolução do Front-end na prática</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. </p>
-                        </div>
+                        <h2>Veja a evolução do Front-end na prática</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. </p>
                     </div>
                 </div>
             </div>
@@ -91,33 +90,27 @@
                     <img src="./assets/post-2.png" alt="">
                     <p class="figcaption">Janeiro 04, 2022</p>
                     
-                    <div class="post-content">
-                        <h2>10 dicas para conseguir a vaga desejada</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
-                    </div>
+                    <h2>10 dicas para conseguir a vaga desejada</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
                 </div>
                 
                 <div class="normal-post">
                     <img src="./assets/post-3.png" alt="">
                     <p class="figcaption">Janeiro 04, 2022</p>
                     
-                    <div class="post-content">
-                        <h2>Deixe seu código mais semântico com essas dicas</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
-                    </div>
+                    <h2>Deixe seu código mais semântico com essas dicas</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
                 </div>
                 
                 <div class="normal-post">
                     <img src="./assets/post-4.png" alt="">
                     <p class="figcaption">Janeiro 04, 2022</p>
                     
-                    <div class="post-content">
-                        <h2>Use essas dicas nas suas aplicações mobile</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
-                    </div>
+                    <h2>Use essas dicas nas suas aplicações mobile</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
 </body>
 </html>

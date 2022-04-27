@@ -14,4 +14,211 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    list-style: none;
+    font-family: var(--paragraph);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--purple-bg);
+    color: var(--white);
+}
+
+.active {
+    font-weight: 600;
+}
+
+.slider {
+    background-color: var(--green);
+
+    width: 2px;
+    height: 17px;
+}
+
+.divider {
+    height: 6px;
+    width: 100%;
+
+    background-color: var(--green);
+}
+
+.thin-divider {
+    background-color: var(--light-purple);
+
+    width: 470px;
+    height: 1px;
+
+    margin: 1.5rem auto;
+}
+
+header .container {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 4rem 0 69px 0;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+}
+
+header .container nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header .container nav ul .li-active {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+header .container nav ul li {
+    font-size: 18px;
+}
+
+header .container nav .search-box {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav .search-box input {
+    height: 44px;
+    width: 230px;
+
+    background-color: var(--dark-bg);
+    color: var(--white);
+
+    border: 1px solid var(--dark-bg);
+    border-radius: .25rem 0 0 .25rem;
+
+    padding: 1.5rem 1.5rem;
+
+    font-size: 14px;
+}
+
+header .container nav .search-box input::placeholder {
+    color: var(--white);
+    font-size: 14px;
+}
+
+header .container nav .search-box button {
+    background-color: var(--button-bg);
+
+    border: 1px solid var(--button-bg);
+    border-radius: 0 .25rem .25rem 0;
+
+    height: 50px;
+    width: 70px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+header .container .hero {
+    display: flex;
+    justify-content: center;
+
+    gap: 4rem;
+}
+
+header .container .hero .left-hero h1 {
+    font: bold 36px var(--title);
+    line-height: 54px;
+
+    color: var(--button-bg);
+}
+
+header .container .hero .left-hero p {
+    margin: 1rem 0 1.5rem 0;
+
+    color: var(--light-purple);
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+}
+
+header .container .hero .left-hero button {
+    display: flex;
+    align-items: center;
+    gap: .5rem  ;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--button-bg);
+}
+
+header .container .hero .left-hero button img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+main .container {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 4rem 0 69px 0;
+}
+
+main .container .top-content {
+    display: flex;
+    gap: 130px;
+}
+
+main .container .top-content .left-post .big-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .container .top-content .left-post .big-post h2, main .container .top-content .right-post .small-post h2, main .container .bottom-content .normal-post h2 {
+    font-size: bold;
+    color: var(--purple-bg);
+}
+
+main .container .top-content .left-post .big-post p, main .container .top-content .right-post .small-post p, main .container .bottom-content .normal-post p {
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: justify;
+}
+
+main .container .top-content .right-post .small-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .container .bottom-content {
+    display: flex;
+    gap: 30px;
+
+    margin: 4rem 0 0 0;
+}
+
+main .container .bottom-content .normal-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
