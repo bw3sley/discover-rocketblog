@@ -195,6 +195,7 @@ main .container .top-content .left-post .big-post {
 main .container .top-content .left-post .big-post h2, main .container .top-content .right-post .small-post h2, main .container .bottom-content .normal-post h2 {
     font-size: bold;
     color: var(--purple-bg);
+    font-family: var(--title);
 }
 
 main .container .top-content .left-post .big-post p, main .container .top-content .right-post .small-post p, main .container .bottom-content .normal-post p {
