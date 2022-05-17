@@ -1,10 +1,10 @@
 :root {
-    --purple-bg: #290742;
-    --dark-bg: #170027;
-    --button-bg: #9e6dc2;
-    --white: #fff;
-    --light-purple: #fbf6ff;
-    --green: #4fff4b;
+    --purple-bg: hsl(275, 81%, 14%);
+    --dark-bg: hsl(275, 100%, 8%);
+    --button-bg: hsl(275, 41%, 59%);
+    --white: hsl(0, 0%, 100%);
+    --light-purple: hsl(273, 100%, 98%);
+    --green: hsl(119, 100%, 65%);
 
     --title: 'Poppins', sans-serif;
     --paragraph: 'Roboto', sans-serif;
@@ -66,7 +66,7 @@ button:hover, a:hover {
     opacity: .7;
 }
 
-header .container {
+.container {
     max-width: 1200px;
     width: 100%;
 
@@ -75,7 +75,7 @@ header .container {
     padding: 4rem 0 69px 0;
 }
 
-header .container nav {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,30 +83,30 @@ header .container nav {
     margin-bottom: 4rem;
 }
 
-header .container nav ul {
+nav ul {
     display: flex;
     gap: 2rem;
 }
 
-header .container nav ul .li-active {
+.li-active {
     display: flex;
     align-items: center;
     gap: 3px;
 }
 
-header .container nav ul li a {
+nav ul li a {
     font-size: 18px;
     color: var(--title);
 
     transition: 300ms;
 }
 
-header .container nav .search-box {
+nav .search-box {
     display: flex;
     align-items: center;
 }
 
-header .container nav .search-box input {
+nav .search-box input {
     height: 44px;
     width: 230px;
 
@@ -121,18 +121,18 @@ header .container nav .search-box input {
     font-size: 14px;
 }
 
-header .container nav .search-box input::placeholder {
+nav .search-box input::placeholder {
     color: var(--white);
     font-size: 14px;
 }
 
-header .container nav .search-box input:focus-within {
+nav .search-box input:focus-within {
     outline: none;
 
     border: 1px solid var(--button-bg);
 }
 
-header .container nav .search-box button {
+nav .search-box button {
     background-color: var(--button-bg);
 
     border: 1px solid var(--button-bg);
@@ -146,46 +146,48 @@ header .container nav .search-box button {
     transition: 300ms;
 }
 
-header .container .hero {
+.hero {
     display: flex;
     justify-content: center;
 
     gap: 4rem;
 }
 
-header .container .hero .left-hero h1 {
+.hero .left-hero h1 {
     font: bold 36px var(--title);
     line-height: 54px;
 
     color: var(--button-bg);
 }
 
-header .container .hero .left-hero p {
+.hero .left-hero p {
     margin: 1rem 0 1.5rem 0;
 
     color: var(--light-purple);
+    
     font-size: 18px;
     line-height: 27px;
     text-align: justify;
 }
 
-header .container .hero .left-hero button {
+.hero .left-hero a {
     display: flex;
     align-items: center;
-    gap: .5rem  ;
+    gap: .5rem;
 
     background-color: transparent;
+    color: var(--button-bg);
+    
     border: none;
 
     font-size: 18px;
     font-weight: 800;
-    color: var(--button-bg);
 
     cursor: pointer;
     transition: 300ms;
 }
 
-header .container .hero .left-hero button img {
+.hero .left-hero a img {
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -204,39 +206,39 @@ main .container .top-content {
     gap: 130px;
 }
 
-main .container .top-content .left-post .big-post {
+.top-content .left-post .big-post {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-main .container .top-content .left-post .big-post h2, main .container .top-content .right-post .small-post h2, main .container .bottom-content .normal-post h2 {
+.top-content .left-post .big-post h2, .top-content .right-post .small-post h2, .bottom-content .normal-post h2 {
     font-size: bold;
     color: var(--purple-bg);
     font-family: var(--title);
 }
 
-main .container .top-content .left-post .big-post p, main .container .top-content .right-post .small-post p, main .container .bottom-content .normal-post p {
+.top-content .left-post .big-post p, .top-content .right-post .small-post p, .bottom-content .normal-post p {
     font-size: 16px;
     line-height: 24px;
 
     text-align: justify;
 }
 
-main .container .top-content .right-post .small-post {
+.top-content .right-post .small-post {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-main .container .bottom-content {
+.bottom-content {
     display: flex;
     gap: 30px;
 
     margin: 4rem 0 0 0;
 }
 
-main .container .bottom-content .normal-post {
+.bottom-content .normal-post {
     display: flex;
     flex-direction: column;
     gap: 1rem;
